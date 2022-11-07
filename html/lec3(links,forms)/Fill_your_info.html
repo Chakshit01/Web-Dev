@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill your Info</title>
+</head>
+<body>
+    <h1>Fill Out This Form</h1>
+    <!-- Using Forms -->
+    <form action="submit.hmtl" >
+
+        <label for="username">Your Name</label>
+        <input type="text" name="username" id="username" >
+
+         <br><br>
+        <label for="email">Email id</label>
+        <input type="email" name="" id="email" name="email">
+
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" >
+
+        <br><br>
+        <label for="fav_color">Your Fav Color</label>
+        <input type="color" name="color" >
+
+        <br><br>
+        <p>T-shirt Size:</p>
+
+        <label for="small">Small</label>
+        <input type="radio" name="T-shirt Size" id="small" value="small">
+        <br>
+        <label for="medium">Medium</label><input type="radio" name="T-shirt Size" id="medium" value="medium">
+        <br>
+        <label for="large">Large</label><input type="radio" name="T-shirt Size" id="large" value="large">
+        
+        <br><br>
+
+
+        <label for="Quality">Quality of the Product</label>
+        <select name="qlty" id="Quality">
+        <option value="cotton">Cotton</option>
+        <option value="woolen">Woolen</option>
+        <option value="synthetic">Synthentic</option>
+        </select>
+        <hr>
+        
+        <br><br>
+        <label for="how_is_it">Tell us the Product Quality?</label>
+        <br>
+        <textarea  name="how_is_it" id="how_is_it" cols="40" rows="10"></textarea>
+
+        <br><br>
+        <input type="reset">
+
+        <input type="submit">
+    </form>
+</body>
+</html>
