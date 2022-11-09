@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* content is emerged inside the border of the box */
+    box-sizing: border-box;
+}
+
+
+.box
+{
+    width: 200px;
+    height: 200px;
+   border: 10px solid black;
+   /* Padding can be set individually for the all four sides like left, right, top, bottom */
+   padding: 20px ;
+   margin: 30px;
+margin-inline: auto;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.blue
+{
+    background-color: blue;
+}
