@@ -1,0 +1,44 @@
+.main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.top
+{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.left
+{
+    width: 60%;
+    height: 100%;
+    background-color: blueviolet;
+  
+}
+
+.right
+{
+    width: 40%;
+    height: 100%;
+    background-color: brown;
+    float: right;
+    
+}
+.container{
+    width: 80%;
+
+}
+
+.kitty{
+    float: left;
+    width: 200px;   
+}
+
+.bottomKitty
+{
+   width: 200px; 
+   float: left;
+}
