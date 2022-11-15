@@ -3,6 +3,8 @@
     /* this is to define that no element get default margin or padding */
     padding: 0;
     margin: 0;
+
+    box-sizing: border-box;
 }
 
 
@@ -14,7 +16,7 @@
 p{
    /* inline element does not get affected from the top and bottom margin whereas block elements depends on them */
     margin: 40px;
-    display: inline;
+    display: inline-block;
 }
 
 .header-text
@@ -27,4 +29,6 @@ img{
     width: 400px;
     /* remove the element from the accesibility tree */
     display: none;
+/* This function will make the image hidden but it will be consuming the same amount of area in the webpage */
+    /* visibility: hidden; */
 }
