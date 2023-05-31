@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    /* min-width: 100vw; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-bar {
+    font-family: 'Varela Round', sans-serif;
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+.right-section li {
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-bar>ul>li {
+    background: -webkit-linear-gradient( #eee, #6b705c , #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s all;
+}
+
+.nav-bar>ul>li:hover {
+    background: -webkit-linear-gradient(#39FF14, #39FF14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#logo img{
+    width: 48px;
+    padding: 0 2px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+} 
+
+.container {
+    min-width: 350px;
+    min-height: 70vh;
+    background-color: black;
+    color: ivory;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./assets/cover.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+.container h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient( #eee, #6b705c , #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s background;
+}
+
+.container h1:hover {
+    background: -webkit-linear-gradient( #f2e9e4 , #6d6875 , #ede0d4 , #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    min-height: 100px;
+    min-width: 500px;
+    width: 100%;
+    background-color: black;
+    color: ivory;
+    flex-direction: column;
+}
+
+.bottom input {
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 14px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#eee,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+}
+
+#progressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem {
+    display: flex;
+    height: 50px;
+    color: #f2e9e4;
+    font-weight: bold;
+    width: 100%;
+    margin: 12px 0;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.songItem img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}   
+
+.songitemcontainer {
+    width: 280px;
+    margin-top: 70px;
+}
+
+.songItem .timestamp i {
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 4px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#eee,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+}
+
+.songItem .timestamp i:hover{
+    background: -webkit-linear-gradient(#ffa280,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.025em);
+}
+
+.songinfo {
+    position: absolute;
+    margin-top: 1.5em;
+    left: 10vw;
+    font-weight: bolder;
+    font-family: 'Varela Round', sans-serif;   
+}
+
+.songinfo img {
+    padding-right: 5px;
+    width: 60px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+#masterPlay:hover {
+    background: -webkit-linear-gradient(#39FF14,#f1ff5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.025em);
+}
+
+.master:hover {
+    background: -webkit-linear-gradient(#ffa280,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.025em);
+}
+
+/* Media Queries */
+
+@media (max-width : 655px) {
+
+    #progressBar {
+        margin-top: 10px;
+        width: 50vw;
+        cursor: pointer;
+    }
+}
+
+@media (max-width : 450px) {
+    
+    .container {
+        padding: 20px;
+        background-size: 350px;
+    }
+}
